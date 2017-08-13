@@ -2,35 +2,38 @@
 Introduction to writing contracts for EOS.IO. More...
 
 # 如何编写合约
-关于如何为EOS.IO编写合约的介绍。[更多]()
+关于如何为EOS.IO编写合约的介绍。[更多](#detail)
+
+[toc]
 
 ## Modules
-[Database API]()
+[Database API](#)
  	APIs that store and retreive data on the blockchain EOS.IO organizes data according to the following broad structure: 
  	在区块链存储和检索数据的接口。
  
- [Math API]()
+ [Math API](#)
  	Defines common math functions. 
  	定义了通用的数学函数。
  
- [Message API]()
+ [Message API](#)
  	Define API for querying message properties. 
  	定义了查询消息属性的接口。
  
- [Console API]()
+ [Console API](#)
  	Enables applications to log/print text messages. 
  	开启应用程序记录或打印文本信息。
  
- [Token API]()
+ [Token API](#)
  	Defines the ABI for interfacing with standard-compatible token messages and database tables. 
  	定义了标准兼容的 token 消息和数据库表之间交互的ABI（应用系统二进制接口）
  
- [Builtin Types]()
+ [Builtin Types](#)
  	Specifies typedefs and aliases. 
  	类型定义和别名。
  
 ## Detailed Description
 
+<a name="detail"></a>
 ## 详细描述
 
 ### Background
