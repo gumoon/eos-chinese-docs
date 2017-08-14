@@ -1,3 +1,5 @@
+>本文翻译自：<https://eosio.github.io/eos/group__contractdev.html>
+
 # How-To-Write-Contracts
 Introduction to writing contracts for EOS.IO. More...
 
@@ -125,4 +127,7 @@ extern "C" {
 
 >**注意**
 >当定义你自己的入口函数时，需要把它们放在  extern "C" 代码块中。以便 C++ 名称管理器不会把它们当成普通函数。
+
+--
+>本文译者：[gumoon](https://github.com/gumoon)
 
