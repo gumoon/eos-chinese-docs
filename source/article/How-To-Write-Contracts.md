@@ -3,7 +3,7 @@
 # How-To-Write-Contracts
 Introduction to writing contracts for EOS.IO. More...
 
-# 如何编写合约
+# EOS 合约编写指南
 关于如何为EOS.IO编写合约的介绍。[更多](#detail)
 
 [toc]
@@ -12,6 +12,7 @@ Introduction to writing contracts for EOS.IO. More...
 [Database API](#)
  	APIs that store and retreive data on the blockchain EOS.IO organizes data according to the following broad structure: 
  	在区块链存储和检索数据的接口。
+ 
  
  [Math API](#)
  	Defines common math functions. 
@@ -44,7 +45,7 @@ EOS.IO contracts (aka applications) are deployed to a blockchain as pre-compiled
 
 ### 背景
 
-EOS.IO 合约（亦称应用程序）作为预编译的web程序集（WASM）被部署到区块链。WASM 使用 LLVM 和 clang 从 C/C++ 编译，这意味着你需要有 C/C++ 知识来开发区块链应用程序。虽然可以用 C 来开发，但是，我们强烈建议所有的开发者使用 EOS.IO C++ 接口。因为 C++ 接口提供了更加健壮的类型安全支持并且通常更容易阅读。
+EOS.IO 合约（亦称应用程序）作为预编译的web Assembly（WASM）被部署到区块链。WASM 使用 LLVM 和 clang 从 C/C++ 编译，这意味着你需要有 C/C++ 知识来开发区块链应用程序。虽然可以用 C 来开发，但是，我们强烈建议所有的开发者使用 EOS.IO C++ 接口。因为 C++ 接口提供了更加健壮的类型安全支持并且通常更容易阅读。
 
 ### Application Structure
 
@@ -83,7 +84,7 @@ extern "C" {
 }
 ```
 
-main 方法接收输入参数 code 和 action。action 在整个系统中必须是独一无二的。例如，code 可能是一个货币合约，action 可能是一个转让动作。这个事件（code,action)可以被传递给包含发送者和接受者的若干合约。应用程序来决定如何响应这个事件。
+main（apply) 方法接收输入参数 code 和 action。action 在整个系统中必须是独一无二的。例如，code 可能是一个货币合约，action 可能是一个转让动作。这个事件（code,action)可以被传递给包含发送者和接受者的若干合约。应用程序来决定如何响应这个事件。
 
 init 方法是另一个入口点。它只在加载代码的时候会被调用一次。你应该在这个方法中执行一次性的状态初始化工作。
 
@@ -126,7 +127,7 @@ extern "C" {
 >When defining your entry points it is required that they are placed in an extern "C" code block so that c++ name mangling does not get applied to the function.
 
 >**注意**
->当定义你自己的入口函数时，需要把它们放在  extern "C" 代码块中。以便 C++ 名称管理器不会把它们当成普通函数。
+>当定义你自己的入口函数时，需要把它们放在  extern "C" 代码块中。以便 C++ name mangling 不会把它们当成普通函数。
 
 --
 >本文译者：[gumoon](https://github.com/gumoon)
