@@ -1,4 +1,4 @@
-# 在 Mac 机器上源码编译运行 EOS 区块链
+# 在 Mac 机器上源码编译运行 EOS
 
 >参考文档：<https://github.com/EOSIO/eos/blob/master/README.md>
 
