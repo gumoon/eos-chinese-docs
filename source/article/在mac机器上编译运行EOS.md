@@ -86,7 +86,7 @@ export WASM_LLVM_CONFIG=~/wasm-compiler/llvm/bin/llvm-config
 
 ```
 cd /path/to/eos/source
-mkdir -p eos/build && cd eos/build
+mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
 make -j4
 ```
