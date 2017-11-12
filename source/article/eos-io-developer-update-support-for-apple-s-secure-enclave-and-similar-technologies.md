@@ -1,6 +1,6 @@
 # EOS.IO Developer Update - Support for Apple's secure enclave and similar technologies | EOS 开发更新 - 支持苹果的安全孤块和类似技术
 
-> 本文翻译自：https://eosio.github.io/eos/group__eosc.html
+> 本文翻译自：https://steemit.com/eos/@dan/eos-io-developer-update-support-for-apple-s-secure-enclave-and-similar-technologies
 >
 > 译者：[区块链中文字幕组 胡亮](https://github.com/gumoon)
 >
